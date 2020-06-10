@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     #     delete :delete_multiple, to: "locations#delete_multiple"
         
     #   end
-    end
+    # end
     resource :session, only: [:create, :destroy]
   end
 end
