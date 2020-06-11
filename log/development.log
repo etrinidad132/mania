@@ -1138,3 +1138,266 @@ Processing by Api::SessionsController#destroy as JSON
 Completed 200 OK in 32ms (Views: 0.3ms | ActiveRecord: 19.4ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4564860734470855560)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateFranchises (20200611025209)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (318.8ms)[0m  [1m[35mCREATE TABLE "franchises" ("id" bigserial primary key, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200611025209_create_franchises.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200611025209"]]
+  ↳ bin/rails:9
+  [1m[35m (23.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (25.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(4564860734470855560)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mFranchise Load (0.3ms)[0m  [1m[34mSELECT "franchises".* FROM "franchises"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/edward/.rbenv/versions/2.5.1/bin/annotate:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (17.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[36mFranchise Load (0.3ms)[0m  [1m[34mSELECT "franchises".* FROM "franchises"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bart"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bart@bart.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "laRY2ZrIp71ch4HfBeTKmg"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (25.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "session_token", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "bart"], ["email", "bart@bart.com"], ["session_token", "laRY2ZrIp71ch4HfBeTKmg"], ["password_digest", "$2a$12$a4LAz9H/H7iYlzGQMbFddOa6sY5p67DYgSp54uby4aDTqzHZsB5B."], ["created_at", "2020-06-11 03:39:21.728289"], ["updated_at", "2020-06-11 03:39:21.728289"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (173.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mFranchise Create (1.2ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Animal Crossing"], ["created_at", "2020-06-11 03:39:21.941884"], ["updated_at", "2020-06-11 03:39:21.941884"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (15.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:59
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Banjo Universe"], ["created_at", "2020-06-11 03:39:21.962701"], ["updated_at", "2020-06-11 03:39:21.962701"]]
+  ↳ db/seeds.rb:59
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:62
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Bayonetta Universe"], ["created_at", "2020-06-11 03:39:21.970861"], ["updated_at", "2020-06-11 03:39:21.970861"]]
+  ↳ db/seeds.rb:62
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Castlevania"], ["created_at", "2020-06-11 03:39:21.979133"], ["updated_at", "2020-06-11 03:39:21.979133"]]
+  ↳ db/seeds.rb:65
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mFranchise Create (0.6ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Donkey Kong Universe"], ["created_at", "2020-06-11 03:39:21.987513"], ["updated_at", "2020-06-11 03:39:21.987513"]]
+  ↳ db/seeds.rb:68
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mFranchise Create (0.8ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Dragon Quest"], ["created_at", "2020-06-11 03:39:21.995795"], ["updated_at", "2020-06-11 03:39:21.995795"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:74
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Duck Hunt Universe"], ["created_at", "2020-06-11 03:39:22.004227"], ["updated_at", "2020-06-11 03:39:22.004227"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:77
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "F-Zero"], ["created_at", "2020-06-11 03:39:22.012572"], ["updated_at", "2020-06-11 03:39:22.012572"]]
+  ↳ db/seeds.rb:77
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Fatal Fury"], ["created_at", "2020-06-11 03:39:22.020612"], ["updated_at", "2020-06-11 03:39:22.020612"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:83
+  [1m[36mFranchise Create (0.8ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Final Fantasy"], ["created_at", "2020-06-11 03:39:22.029338"], ["updated_at", "2020-06-11 03:39:22.029338"]]
+  ↳ db/seeds.rb:83
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:83
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:86
+  [1m[36mFranchise Create (0.8ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Fire Emblem"], ["created_at", "2020-06-11 03:39:22.037416"], ["updated_at", "2020-06-11 03:39:22.037416"]]
+  ↳ db/seeds.rb:86
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:86
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:89
+  [1m[36mFranchise Create (0.6ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Game & Watch Series"], ["created_at", "2020-06-11 03:39:22.045950"], ["updated_at", "2020-06-11 03:39:22.045950"]]
+  ↳ db/seeds.rb:89
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:89
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:92
+  [1m[36mFranchise Create (0.6ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Ice Climbers Universe"], ["created_at", "2020-06-11 03:39:22.054031"], ["updated_at", "2020-06-11 03:39:22.054031"]]
+  ↳ db/seeds.rb:92
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:92
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:95
+  [1m[36mFranchise Create (0.6ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Kid Icarus"], ["created_at", "2020-06-11 03:39:22.062594"], ["updated_at", "2020-06-11 03:39:22.062594"]]
+  ↳ db/seeds.rb:95
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:95
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:98
+  [1m[36mFranchise Create (0.6ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Kirby Universe"], ["created_at", "2020-06-11 03:39:22.070784"], ["updated_at", "2020-06-11 03:39:22.070784"]]
+  ↳ db/seeds.rb:98
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:101
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Legend Of Zelda"], ["created_at", "2020-06-11 03:39:22.079388"], ["updated_at", "2020-06-11 03:39:22.079388"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:104
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Mario Universe"], ["created_at", "2020-06-11 03:39:22.087326"], ["updated_at", "2020-06-11 03:39:22.087326"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:107
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Megaman Universe"], ["created_at", "2020-06-11 03:39:22.095898"], ["updated_at", "2020-06-11 03:39:22.095898"]]
+  ↳ db/seeds.rb:107
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:107
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Metal Gear Solid"], ["created_at", "2020-06-11 03:39:22.103936"], ["updated_at", "2020-06-11 03:39:22.103936"]]
+  ↳ db/seeds.rb:110
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:113
+  [1m[36mFranchise Create (0.6ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Metroid"], ["created_at", "2020-06-11 03:39:22.112637"], ["updated_at", "2020-06-11 03:39:22.112637"]]
+  ↳ db/seeds.rb:113
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:113
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:116
+  [1m[36mFranchise Create (0.6ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Mother"], ["created_at", "2020-06-11 03:39:22.120699"], ["updated_at", "2020-06-11 03:39:22.120699"]]
+  ↳ db/seeds.rb:116
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:116
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:119
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "NES Universe"], ["created_at", "2020-06-11 03:39:22.129317"], ["updated_at", "2020-06-11 03:39:22.129317"]]
+  ↳ db/seeds.rb:119
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:119
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:122
+  [1m[36mFranchise Create (0.6ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Pac-Man Universe"], ["created_at", "2020-06-11 03:39:22.137365"], ["updated_at", "2020-06-11 03:39:22.137365"]]
+  ↳ db/seeds.rb:122
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:125
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Persona"], ["created_at", "2020-06-11 03:39:22.145978"], ["updated_at", "2020-06-11 03:39:22.145978"]]
+  ↳ db/seeds.rb:125
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:125
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:128
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Pikmin"], ["created_at", "2020-06-11 03:39:22.154111"], ["updated_at", "2020-06-11 03:39:22.154111"]]
+  ↳ db/seeds.rb:128
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:128
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:131
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Pokemon"], ["created_at", "2020-06-11 03:39:22.162515"], ["updated_at", "2020-06-11 03:39:22.162515"]]
+  ↳ db/seeds.rb:131
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:131
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:134
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Punch-Out"], ["created_at", "2020-06-11 03:39:22.170800"], ["updated_at", "2020-06-11 03:39:22.170800"]]
+  ↳ db/seeds.rb:134
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:134
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:137
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sonic Team"], ["created_at", "2020-06-11 03:39:22.179085"], ["updated_at", "2020-06-11 03:39:22.179085"]]
+  ↳ db/seeds.rb:137
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:137
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:140
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Splatoon"], ["created_at", "2020-06-11 03:39:22.187347"], ["updated_at", "2020-06-11 03:39:22.187347"]]
+  ↳ db/seeds.rb:140
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:140
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:143
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Star Fox"], ["created_at", "2020-06-11 03:39:22.195669"], ["updated_at", "2020-06-11 03:39:22.195669"]]
+  ↳ db/seeds.rb:143
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:143
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mFranchise Create (0.6ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Street Fighter"], ["created_at", "2020-06-11 03:39:22.204109"], ["updated_at", "2020-06-11 03:39:22.204109"]]
+  ↳ db/seeds.rb:146
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:149
+  [1m[36mFranchise Create (0.6ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Wario Universe"], ["created_at", "2020-06-11 03:39:22.212401"], ["updated_at", "2020-06-11 03:39:22.212401"]]
+  ↳ db/seeds.rb:149
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:149
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:152
+  [1m[36mFranchise Create (0.6ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Wii Fit Series"], ["created_at", "2020-06-11 03:39:22.220746"], ["updated_at", "2020-06-11 03:39:22.220746"]]
+  ↳ db/seeds.rb:152
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:152
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:155
+  [1m[36mFranchise Create (0.7ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Xenoblade Chronicles"], ["created_at", "2020-06-11 03:39:22.228955"], ["updated_at", "2020-06-11 03:39:22.228955"]]
+  ↳ db/seeds.rb:155
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:155
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:158
+  [1m[36mFranchise Create (0.6ms)[0m  [1m[32mINSERT INTO "franchises" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Yoshi Universe"], ["created_at", "2020-06-11 03:39:22.237391"], ["updated_at", "2020-06-11 03:39:22.237391"]]
+  ↳ db/seeds.rb:158
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:158
+  [1m[36mFranchise Load (0.9ms)[0m  [1m[34mSELECT "franchises".* FROM "franchises"[0m
