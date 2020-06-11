@@ -1,1 +1,1 @@
-json.extract! franchise, :name
+json.extract! franchise, :id, :name, :stage_ids

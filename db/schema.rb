@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 2020_06_11_044036) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "stages", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "franchise_id", null: false
+    t.integer "title_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["franchise_id"], name: "index_stages_on_franchise_id"
+    t.index ["title_id"], name: "index_stages_on_title_id"
+  end
+
   create_table "titles", force: :cascade do |t|
     t.string "name", null: false
     t.string "platform", null: false

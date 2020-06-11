@@ -1,1 +1,1 @@
-json.extract! title, :name, :platform, :year
+json.extract! title, :id, :name, :platform, :year, :stage_ids

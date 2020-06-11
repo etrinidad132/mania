@@ -11,4 +11,6 @@
 #
 class Title < ApplicationRecord
     validates :name, :platform, :year, presence: true
+
+    has_many :stages
 end
