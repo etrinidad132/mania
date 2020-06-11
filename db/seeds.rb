@@ -161,6 +161,27 @@ frans = [
   Yoshi_Universe = Franchise.create!(
       name: frans[34]
   )
+  Electro_Plankton = Franchise.create!(
+      name: "Electro Plankton"
+  )
+  Balloon_Fight = Franchise.create!(
+      name: "Balloon Fight"
+  )
+  Street_Plaza = Franchise.create!(
+      name: "Street Plaza"
+  )
+  Tomodachi_Life = Franchise.create!(
+      name: "Tomodachi Life"
+  )
+  Pictochat = Franchise.create!(
+      name: "Pictochat"
+  )
+  Nintendogs = Franchise.create!(
+      name: "Nintendogs"
+  )
+  Pilotwings = Franchise.create!(
+      name: "Pilotwings"
+  )
 
   p "Franchise Done"
 
@@ -323,3 +344,112 @@ stage = ["3D Land",
 
 
 p "Seeds Done"
+
+stage = ["Battlefield",
+"Big Battlefield",
+"Final Destination",
+"Peach's Castle",
+"Mushroom Kingdom",
+"Princess Peach's Castle",
+"Rainbow Cruise",
+"Mushroom Kingdom II",
+"Delfino Plaza",
+"Mushroomy Kingdom",
+"Figure-8 Circuit",
+"Luigi's Mansion",
+"Mario Bros.",
+"3D Land",
+"Golden Plains",
+"Paper Mario",
+"Mushroom Kingdom U",
+"Mario Galaxy",
+"Mario Circuit",
+"Super Mario Maker",
+"New Donk City Hall",
+"Wrecking Crew",
+"Kongo Jungle",
+"Kongo Falls",
+"Jungle Japes",
+"75m",
+"Hyrule Castle",
+"Great Bay",
+"Temple",
+"Bridge of Eldin",
+"Pirate Ship",
+"Gerudo Valley",
+"Spirit Train",
+"Skyloft",
+"Great Plateau Tower",
+"Super Happy Tree",
+"Yoshi's Island (Melee)",
+"Yoshi's Story",
+"Yoshi's Island",
+"Dream Land",
+"Fountain of Dreams",
+"Green Greens",
+"Halberd",
+"Dream Land GB",
+"The Great Cave Offensive",
+"Saffron City",
+"Pokemon Stadium",
+"Pokemon Stadium 2",
+"Spear Pillar",
+"Unova Pokemon League",
+"Prism Tower",
+"Kalos Pokemon League",
+"Brinstar",
+"Brinstar Depths",
+"Norfair",
+"Frigate Orpheon",
+"Corneria",
+"Venom",
+"Lylat Cruise",
+"Onett",
+"Fourside",
+"New Pork City",
+"Magicant",
+"Big Blue",
+"Port Town Aero Drive",
+"Mute City SNES",
+"Wario Ware, Inc.",
+"Gamer",
+"Castle Siege",
+"Arena Ferox",
+"Coliseum",
+"Garred Mach Monastery",
+"Distant Planet",
+"Garden of Hope",
+"Smashville",
+"Tortimer Island",
+"Town and City",
+"Summit",
+"Skyworld",
+"Palutena's Temple",
+"Reset Bomb Forest",
+"Shadow Moses Island",
+"Hanenbow",
+"Green Hill Zone",
+"Windy Hill Zone",
+"Balloon Fight",
+"Find Mii",
+"Tomodachi Life",
+"Pictochat 2",
+"Living Room",
+"Flat Zone X",
+"Wii Fit Studio",
+"Boxing Ring",
+"Gaur Plain",
+"Duck Hunt",
+"Pilotwings",
+"Wuhu Island",
+"Wily Castle",
+"PAC-LAND",
+"Suzaku Castle",
+"Midgar",
+"Umbra Clock Tower",
+"Moray Towers",
+"Dracula's Castle",
+"Mementos",
+"Yggdrasil's Altar",
+"Spiral Mountain",
+"King of Fighters Stadium"]
