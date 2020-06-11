@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
 Franchise.destroy_all
+Title.destroy_all
 
 user1 = User.create!(
     username: "bart",
@@ -161,5 +162,48 @@ frans = [
       name: frans[34]
   )
 
-p "Franchise Done"
+  p "Franchise Done"
+
+  game_title = [
+      "64",
+      "Melee",
+      "Brawl",
+      "Smash 4",
+      "Ultimate"
+  ]
+
+  platform = [
+      "Nintendo 64",
+      "GameCube",
+      "Wii",
+      "Wii U",
+      "Swtitch"
+  ]
+
+  Smash64 = Title.create!(
+      name: game_title[0],
+      platform: platform[0],
+      year: 1999
+  )
+  Melee = Title.create!(
+      name: game_title[1],
+      platform: platform[1],
+      year: 2001
+  )
+  Brawl = Title.create!(
+      name: game_title[2],
+      platform: platform[2],
+      year: 2008
+  )
+  WiiU = Title.create!(
+      name: game_title[3],
+      platform: platform[3],
+      year: 2014
+  )
+  Switch = Title.create!(
+      name: game_title[4],
+      platform: platform[4],
+      year: 2018
+  )
+p "Titles"
 p "Seeds Done"
