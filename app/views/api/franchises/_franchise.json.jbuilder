@@ -1,0 +1,1 @@
+json.extract! franchise, :name
