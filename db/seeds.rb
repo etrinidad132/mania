@@ -8,6 +8,7 @@
 User.destroy_all
 Franchise.destroy_all
 Title.destroy_all
+Stage.destroy_all
 
 user1 = User.create!(
     username: "bart",
@@ -56,133 +57,133 @@ frans = [
 ]
 
 
-  Animal_Crossing = Franchise.create!(
+  animal_Crossing = Franchise.create!(
       name: frans[0]
   )
-  Banjo_Universe = Franchise.create!(
+  banjo_Universe = Franchise.create!(
       name: frans[1]
   )
-  Bayonetta_Universe = Franchise.create!(
+  bayonetta_Universe = Franchise.create!(
       name: frans[2]
   )
-  Castlevania = Franchise.create!(
+  castlevania = Franchise.create!(
       name: frans[3]
   )
-  Donkey_Kong_Universe = Franchise.create!(
+  donkey_Kong_Universe = Franchise.create!(
       name: frans[4]
   )
-  Dragon_Quest = Franchise.create!(
+  dragon_Quest = Franchise.create!(
       name: frans[5]
   )
-  Duck_Hunt_Universe = Franchise.create!(
+  duck_Hunt_Universe = Franchise.create!(
       name: frans[6]
   )
-  F_Zero = Franchise.create!(
+  f_Zero = Franchise.create!(
       name: frans[7]
   )
-  Fatal_Fury = Franchise.create!(
+  fatal_Fury = Franchise.create!(
       name: frans[8]
   )
-  Final_Fantasy = Franchise.create!(
+  final_Fantasy = Franchise.create!(
       name: frans[9]
   )
-  Fire_Emblem = Franchise.create!(
+  fire_Emblem = Franchise.create!(
       name: frans[10]
   )
-  Game_Watch_Series = Franchise.create!(
+  game_Watch_Series = Franchise.create!(
       name: frans[11]
   )
-  Ice_Climbers_Universe = Franchise.create!(
+  ice_Climbers_Universe = Franchise.create!(
       name: frans[12]
   )
-  Kid_Icarus = Franchise.create!(
+  kid_Icarus = Franchise.create!(
       name: frans[13]
   )
-  Kirby_Universe = Franchise.create!(
+  kirby_Universe = Franchise.create!(
       name: frans[14]
   )
-  Legend_Of_Zelda = Franchise.create!(
+  legend_Of_Zelda = Franchise.create!(
       name: frans[15]
   )
-  Mario_Universe = Franchise.create!(
+  mario_Universe = Franchise.create!(
       name: frans[16]
   )
-  Megaman_Universe = Franchise.create!(
+  megaman_Universe = Franchise.create!(
       name: frans[17]
   )
-  Metal_Gear_Solid = Franchise.create!(
+  metal_Gear_Solid = Franchise.create!(
       name: frans[18]
   )
-  Metroid = Franchise.create!(
+  metroid = Franchise.create!(
       name: frans[19]
   )
-  Mothe_ = Franchise.create!(
+  mother = Franchise.create!(
       name: frans[20]
   )
-  NES_Universe = Franchise.create!(
+  nES_Universe = Franchise.create!(
       name: frans[21]
   )
-  Pac_Man_Universe = Franchise.create!(
+  pac_Man_Universe = Franchise.create!(
       name: frans[22]
   )
-  Persona = Franchise.create!(
+  persona = Franchise.create!(
       name: frans[23]
   )
-  Pikmin = Franchise.create!(
+  pikmin = Franchise.create!(
       name: frans[24]
   )
-  Pokemon = Franchise.create!(
+  pokemon = Franchise.create!(
       name: frans[25]
   )
-  Punch_Out = Franchise.create!(
+  punch_Out = Franchise.create!(
       name: frans[26]
   )
-  Sonic_Team = Franchise.create!(
+  sonic_Team = Franchise.create!(
       name: frans[27]
   )
-  Splatoon = Franchise.create!(
+  splatoon = Franchise.create!(
       name: frans[28]
   )
-  Star_Fox = Franchise.create!(
+  star_Fox = Franchise.create!(
       name: frans[29]
   )
-  Street_Fighter = Franchise.create!(
+  street_Fighter = Franchise.create!(
       name: frans[30]
   )
-  Wario_Universe = Franchise.create!(
+  wario_Universe = Franchise.create!(
       name: frans[31]
   )
-  Wii_Fit_Series = Franchise.create!(
+  wii_Fit_Series = Franchise.create!(
       name: frans[32]
   )
-  Xenoblade_Chronicles = Franchise.create!(
+  xenoblade = Franchise.create!(
       name: frans[33]
   )
-  Yoshi_Universe = Franchise.create!(
+  yoshi_Universe = Franchise.create!(
       name: frans[34]
   )
-  Electro_Plankton = Franchise.create!(
+  electro_Plankton = Franchise.create!(
       name: "Electro Plankton"
   )
-  Balloon_F = Franchise.create!(
+  balloon_F = Franchise.create!(
       name: "Balloon Fight"
   )
-  Street_Plaza = Franchise.create!(
+  street_Plaza = Franchise.create!(
       name: "Street Plaza"
   )
-  Tomodachi_Life = Franchise.create!(
+  tomodachi_L = Franchise.create!(
       name: "Tomodachi Life"
   )
-  Pictochat = Franchise.create!(
+  pictochat = Franchise.create!(
       name: "Pictochat"
   )
-  Nintendogs = Franchise.create!(
+  nintendogs = Franchise.create!(
       name: "Nintendogs"
   )
-  Pilotw = Franchise.create!(
+  pilotw = Franchise.create!(
       name: "Pilotwings"
   )
-  Smash = Franchise.create!(
+  smash = Franchise.create!(
       name: "Smash"
   )
 
@@ -204,27 +205,27 @@ frans = [
       "Swtitch"
   ]
 
-  Smash64 = Title.create!(
+  smash64 = Title.create!(
       name: game_title[0],
       platform: platform[0],
       year: 1999
   )
-  Melee = Title.create!(
+  melee = Title.create!(
       name: game_title[1],
       platform: platform[1],
       year: 2001
   )
-  Brawl = Title.create!(
+  brawl = Title.create!(
       name: game_title[2],
       platform: platform[2],
       year: 2008
   )
-  WiiU = Title.create!(
+  wiiU = Title.create!(
       name: game_title[3],
       platform: platform[3],
       year: 2014
   )
-  Switch = Title.create!(
+  ultimate = Title.create!(
       name: game_title[4],
       platform: platform[4],
       year: 2018
@@ -349,569 +350,529 @@ p "Titles"
 
 ThreeD_Land = Stage.create!(
     name: stage[0],
-    franchise_id: Mario_Universe.id,
-    title_id: Brawl.id
+    franchise_id: mario_Universe.id,
+    title_id: brawl.id
 )
 Arena_Ferox = Stage.create!(
     name: stage[1],
-    franchise_id: Fire_Emblem.id,
-    title_id: WiiU.id
+    franchise_id: fire_Emblem.id,
+    title_id: wiiU.id
 )
 Balloon_Fight = Stage.create!(
     name: stage[2],
-    franchise_id: Balloon_F.id,
-    title_id: WiiU.id
+    franchise_id: balloon_F.id,
+    title_id: wiiU.id
 )
 Battlefield = Stage.create!(
     name: stage[3],
-    franchise_id: Smash.id,
-    title_id: Melee.id
+    franchise_id: smash.id,
+    title_id: melee.id
 )
 Big_Battlefield = Stage.create!(
     name: stage[4],
-    franchise_id: Smash.id,
-    title_id: Melee.id
+    franchise_id: smash.id,
+    title_id: melee.id
 )
 Big_Blue = Stage.create!(
     name: stage[5],
-    franchise_id: F_Zero.id,
-    title_id: Melee.id
+    franchise_id: f_Zero.id,
+    title_id: melee.id
 )
 Boxing_Ring = Stage.create!(
     name: stage[6],
-    franchise_id: Punch_Out.id,
-    title_id: WiiU.id
+    franchise_id: punch_Out.id,
+    title_id: wiiU.id
 )
 Bridge_of_Eldin = Stage.create!(
     name: stage[7],
-    franchise_id: Legend_Of_Zelda.id,
-    title_id: Brawl.id
+    franchise_id: legend_Of_Zelda.id,
+    title_id: brawl.id
 )
 Brinstar = Stage.create!(
     name: stage[8],
-    franchise_id: Metroid.id,
-    title_id: Melee.id
+    franchise_id: metroid.id,
+    title_id: melee.id
 )
 Brinstar_Depths = Stage.create!(
     name: stage[9],
-    franchise_id: Metroid.id,
-    title_id: Melee.id
+    franchise_id: metroid.id,
+    title_id: melee.id
 )
 Castle_Siege = Stage.create!(
     name: stage[10],
-    franchise_id: Fire_Emblem.id,
-    title_id: Brawl.id
+    franchise_id: fire_Emblem.id,
+    title_id: brawl.id
 )
 Coliseum = Stage.create!(
     name: stage[11],
-    franchise_id: Fire_Emblem.id,
-    title_id: WiiU.id
+    franchise_id: fire_Emblem.id,
+    title_id: wiiU.id
 )
 Corneria = Stage.create!(
     name: stage[12],
-    franchise_id: Star_Fox.id,
-    title_id: Melee.id
+    franchise_id: star_Fox.id,
+    title_id: melee.id
 )
 Delfino_Plaza = Stage.create!(
     name: stage[13],
-    franchise_id: Mario_Universe.id,
-    title_id: Brawl.id
+    franchise_id: mario_Universe.id,
+    title_id: brawl.id
 )
 Distant_Planet = Stage.create!(
     name: stage[14],
-    franchise_id: Pikmin.id,
-    title_id: Brawl.id
+    franchise_id: pikmin.id,
+    title_id: brawl.id
 )
 Draculas_Castle = Stage.create!(
     name: stage[15],
-    franchise_id: Castlevania.id,
-    title_id: Ultimate.id
+    franchise_id: castlevania.id,
+    title_id: ultimate.id
 )
 Dream_Land = Stage.create!(
     name: stage[16],
-    franchise_id: Kirby_Universe.id,
-    title_id: Smash64.id
+    franchise_id: kirby_Universe.id,
+    title_id: smash64.id
 )
 Dream_Land_GB = Stage.create!(
     name: stage[17],
-    franchise_id: Kirby_Universe.id,
-    title_id: WiiU.id
+    franchise_id: kirby_Universe.id,
+    title_id: wiiU.id
 )
 Duck_Hunt = Stage.create!(
     name: stage[18],
-    franchise_id: Duck_Hunt_Universe.id,
-    title_id: WiiU.id
+    franchise_id: duck_Hunt_Universe.id,
+    title_id: wiiU.id
 )
 Figure_8_Circuit = Stage.create!(
     name: stage[19],
-    franchise_id: Mario_Universe.id,
-    title_id: Brawl.id
+    franchise_id: mario_Universe.id,
+    title_id: brawl.id
 )
 Final_Destination = Stage.create!(
     name: stage[20],
-    franchise_id: Smash.id,
-    title_id: Melee.id
+    franchise_id: smash.id,
+    title_id: melee.id
 )
 Find_Mii = Stage.create!(
     name: stage[21],
-    franchise_id: Street_Plaza.id,
-    title_id: WiiU.id
+    franchise_id: street_Plaza.id,
+    title_id: wiiU.id
 )
 Flat_Zone_X = Stage.create!(
     name: stage[22],
-    franchise_id: Game_Watch_Series.id,
-    title_id: WiiU.id
+    franchise_id: game_Watch_Series.id,
+    title_id: wiiU.id
 )
 Fountain_of_Dreams = Stage.create!(
     name: stage[23],
-    franchise_id: Kirby_Universe.id,
-    title_id: Melee.id
+    franchise_id: kirby_Universe.id,
+    title_id: melee.id
 )
 Fourside = Stage.create!(
     name: stage[24],
-    franchise_id: Mother.id,
-    title_id: Melee.id
+    franchise_id: mother.id,
+    title_id: melee.id
 )
 Frigate_Orpheon = Stage.create!(
     name: stage[25],
-    franchise_id: Metroid.id,
-    title_id: Brawl.id
+    franchise_id: metroid.id,
+    title_id: brawl.id
 )
 Gamer = Stage.create!(
     name: stage[26],
-    franchise_id: Wario_Universe.id,
-    title_id: WiiU.id
+    franchise_id: wario_Universe.id,
+    title_id: wiiU.id
 )
 Garden_of_Hope = Stage.create!(
     name: stage[27],
-    franchise_id: Pikmin.id,
-    title_id: WiiU.id
+    franchise_id: pikmin.id,
+    title_id: wiiU.id
 )
 Garreg_Mach_Monastery = Stage.create!(
     name: stage[28],
-    franchise_id: Fire_Emblem.id,
-    title_id: Ultimate.id
+    franchise_id: fire_Emblem.id,
+    title_id: ultimate.id
 )
 Gaur_Plain = Stage.create!(
     name: stage[29],
-    franchise_id: Xenoblade.id,
-    title_id: WiiU.id
+    franchise_id: xenoblade.id,
+    title_id: wiiU.id
 )
 Gerudo_Valley = Stage.create!(
     name: stage[30],
-    franchise_id: Legend_Of_Zelda.id,
-    title_id: WiiU.id
+    franchise_id: legend_Of_Zelda.id,
+    title_id: wiiU.id
 )
 Golden_Plains = Stage.create!(
     name: stage[31],
-    franchise_id: Mario_Universe.id,
-    title_id: WiiU.id
+    franchise_id: mario_Universe.id,
+    title_id: wiiU.id
 )
 Great_Bay = Stage.create!(
     name: stage[32],
-    franchise_id: Legend_Of_Zelda.id,
-    title_id: Melee.id
+    franchise_id: legend_Of_Zelda.id,
+    title_id: melee.id
 )
 Great_Plateau_Tower = Stage.create!(
     name: stage[33],
-    franchise_id: Legend_Of_Zelda.id,
-    title_id: Ultimate.id
+    franchise_id: legend_Of_Zelda.id,
+    title_id: ultimate.id
 )
 Green_Greens = Stage.create!(
     name: stage[34],
-    franchise_id: Kirby_Universe.id,
-    title_id: Melee.id
+    franchise_id: kirby_Universe.id,
+    title_id: melee.id
 )
 Green_Hill_Zone = Stage.create!(
     name: stage[35],
-    franchise_id: Sonic_Team.id,
-    title_id: Brawl.id
+    franchise_id: sonic_Team.id,
+    title_id: brawl.id
 )
 Halberd = Stage.create!(
     name: stage[36],
-    franchise_id: Kirby_Universe.id,
-    title_id: Brawl.id
+    franchise_id: kirby_Universe.id,
+    title_id: brawl.id
 )
 Hanenbow = Stage.create!(
     name: stage[37],
-    franchise_id: Electro_Plankton.id,
-    title_id: Brawl.id
+    franchise_id: electro_Plankton.id,
+    title_id: brawl.id
 )
 Hyrule_Castle = Stage.create!(
     name: stage[38],
-    franchise_id: Legend_Of_Zelda.id,
-    title_id: Smash64.id
+    franchise_id: legend_Of_Zelda.id,
+    title_id: smash64.id
 )
 Jungle_Japes = Stage.create!(
     name: stage[39],
-    franchise_id: Donkey_Kong_Universe.id,
-    title_id: Melee.id
+    franchise_id: donkey_Kong_Universe.id,
+    title_id: melee.id
 )
 Kalos_Pokemon_League = Stage.create!(
     name: stage[40],
-    franchise_id: Pokemon.id,
-    title_id: WiiU.id
+    franchise_id: pokemon.id,
+    title_id: wiiU.id
 )
 King_of_Fighters_Stadium = Stage.create!(
     name: stage[41],
-    franchise_id: Fatal_Fury.id,
-    title_id: Ultimate.id
+    franchise_id: fatal_Fury.id,
+    title_id: ultimate.id
 )
 Kongo_Falls = Stage.create!(
     name: stage[42],
-    franchise_id: Donkey_Kong_Universe.id,
-    title_id: Melee.id
+    franchise_id: donkey_Kong_Universe.id,
+    title_id: melee.id
 )
 Kongo_Jungle = Stage.create!(
     name: stage[43],
-    franchise_id: Donkey_Kong_Universe.id,
-    title_id: Melee.id
+    franchise_id: donkey_Kong_Universe.id,
+    title_id: melee.id
 )
 Luigis_Mansion = Stage.create!(
     name: stage[44],
-    franchise_id: Mario_Universe.id,
-    title_id: Brawl.id
+    franchise_id: mario_Universe.id,
+    title_id: brawl.id
 )
 Lylat_Cruise = Stage.create!(
     name: stage[45],
-    franchise_id: Star_Fox.id,
-    title_id: Brawl.id
+    franchise_id: star_Fox.id,
+    title_id: brawl.id
 )
 Magicant = Stage.create!(
     name: stage[46],
-    franchise_id: Mother.id,
-    title_id: WiiU.id
+    franchise_id: mother.id,
+    title_id: wiiU.id
 )
 Mario_Bros = Stage.create!(
     name: stage[47],
-    franchise_id: Mario_Universe.id,
-    title_id: Brawl.id
+    franchise_id: mario_Universe.id,
+    title_id: brawl.id
 )
 Mario_Circuit = Stage.create!(
     name: stage[48],
-    franchise_id: Mario_Universe.id,
-    title_id: WiiU.id
+    franchise_id: mario_Universe.id,
+    title_id: wiiU.id
 )
 Mario_Galaxy = Stage.create!(
     name: stage[49],
-    franchise_id: Mario_Universe.id,
-    title_id: WiiU.id
+    franchise_id: mario_Universe.id,
+    title_id: wiiU.id
 )
 Mementos = Stage.create!(
     name: stage[50],
-    franchise_id: Persona.id,
-    title_id: Ultimate.id
+    franchise_id: persona.id,
+    title_id: ultimate.id
 )
 Midgar = Stage.create!(
     name: stage[51],
-    franchise_id: Final_Fantasy.id,
-    title_id: WiiU.id
+    franchise_id: final_Fantasy.id,
+    title_id: wiiU.id
 )
 Moray_Towers = Stage.create!(
     name: stage[52],
-    franchise_id: Splatoon.id,
-    title_id: Ultimate.id
+    franchise_id: splatoon.id,
+    title_id: ultimate.id
 )
 Mushroom_Kingdom = Stage.create!(
     name: stage[53],
-    franchise_id: Mario_Universe.id,
-    title_id: Smash64.id
+    franchise_id: mario_Universe.id,
+    title_id: smash64.id
 )
 Mushroom_Kingdom_II = Stage.create!(
     name: stage[54],
-    franchise_id: Mario_Universe.id,
-    title_id: Melee.id
+    franchise_id: mario_Universe.id,
+    title_id: melee.id
 )
 Mushroom_KngdomU = Stage.create!(
     name: stage[55],
-    franchise_id: Mario_Universe.id,
-    title_id: WiiU.id
+    franchise_id: mario_Universe.id,
+    title_id: wiiU.id
 )
 Mushroomy_Kingdom = Stage.create!(
     name: stage[56],
-    franchise_id: Mario_Universe.id,
-    title_id: Brawl.id
+    franchise_id: mario_Universe.id,
+    title_id: brawl.id
 )
 Mute_City_SNES = Stage.create!(
     name: stage[57],
-    franchise_id: F_Zero.id,
-    title_id: WiiU.id
+    franchise_id: f_Zero.id,
+    title_id: wiiU.id
 )
 New_Donk_City_Hall = Stage.create!(
     name: stage[58],
-    franchise_id: Mario_Universe.id,
-    title_id: Ultimate.id
+    franchise_id: mario_Universe.id,
+    title_id: ultimate.id
 )
 New_Pork_City = Stage.create!(
     name: stage[59],
-    franchise_id: Mother.id,
-    title_id: Brawl.id
+    franchise_id: mother.id,
+    title_id: brawl.id
 )
 Norfair = Stage.create!(
     name: stage[60],
-    franchise_id: Metroid.id,
-    title_id: Brawl.id
+    franchise_id: metroid.id,
+    title_id: brawl.id
 )
 Onett = Stage.create!(
     name: stage[61],
-    franchise_id: Mother.id,
-    title_id: Melee.id
+    franchise_id: mother.id,
+    title_id: melee.id
 )
 PAC_LAND = Stage.create!(
     name: stage[62],
-    franchise_id: Pac_Man_Universe.id,
-    title_id: WiiU.id
+    franchise_id: pac_Man_Universe.id,
+    title_id: wiiU.id
 )
 Paper_Mario = Stage.create!(
     name: stage[63],
-    franchise_id: Mario_Universe.id,
-    title_id: WiiU.id
+    franchise_id: mario_Universe.id,
+    title_id: wiiU.id
 )
 Peachs_Castle = Stage.create!(
     name: stage[64],
-    franchise_id: Mario_Universe.id,
-    title_id: WiiU.id
+    franchise_id: mario_Universe.id,
+    title_id: wiiU.id
 )
 Pictochat_2 = Stage.create!(
     name: stage[65],
-    franchise_id: Pictochat.id,
-    title_id: WiiU.id
+    franchise_id: pictochat.id,
+    title_id: wiiU.id
 )
 Pilotwings = Stage.create!(
     name: stage[66],
-    franchise_id: Pilotw.id,
-    title_id: WiiU.id
+    franchise_id: pilotw.id,
+    title_id: wiiU.id
 )
 Pirate_Ship = Stage.create!(
     name: stage[67],
-    franchise_id: Legend_Of_Zelda.id,
-    title_id: Brawl.id
+    franchise_id: legend_Of_Zelda.id,
+    title_id: brawl.id
 )
 Pokemon_Stadium = Stage.create!(
     name: stage[68],
-    franchise_id: Pokemon.id,
-    title_id: Melee.id
+    franchise_id: pokemon.id,
+    title_id: melee.id
 )
 Pokemon_Stadium_2 = Stage.create!(
     name: stage[69],
-    franchise_id: Pokemon.id,
-    title_id: Brawl.id
+    franchise_id: pokemon.id,
+    title_id: brawl.id
 )
 Port_Town_Aero_Drive = Stage.create!(
     name: stage[70],
-    franchise_id: F_Zero.id,
-    title_id: Brawl.id
+    franchise_id: f_Zero.id,
+    title_id: brawl.id
 )
 Palutenas_Temple = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
-)
-Paper_Mario = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
-)
-Peachs_Castle = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
-)
-Pictochat_2 = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
-)
-Pilotwings = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
-)
-Pirate_Ship = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
-)
-Pokemon_Stadium = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
-)
-Pokemon_Stadium_2 = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
-)
-Port_Town_Aero_Drive = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[71],
+    franchise_id: kid_Icarus.id,
+    title_id: wiiU.id
 )
 Princess_Peachs_Castle = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[80],
+    franchise_id: mario_Universe.id,
+    title_id: melee.id
 )
 Prism_Tower = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[81],
+    franchise_id: pokemon.id,
+    title_id: wiiU.id
 )
 Rainbow_Cruise = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[82],
+    franchise_id: mario_Universe.id,
+    title_id: melee.id
 )
 Reset_Bomb_Forest = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[83],
+    franchise_id: kid_Icarus.id,
+    title_id: wiiU.id
 )
 Saffron_City = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[84],
+    franchise_id: pokemon.id,
+    title_id: smash64.id
 )
 Shadow_Moses_Island = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[85],
+    franchise_id: metal_Gear_Solid.id,
+    title_id: brawl.id
 )
 Skyloft = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[86],
+    franchise_id: legend_Of_Zelda.id,
+    title_id: wiiU.id
 )
 Skyworld = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[87],
+    franchise_id: kid_Icarus.id,
+    title_id: brawl.id
 )
 Smashville = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[88],
+    franchise_id: animal_Crossing.id,
+    title_id: brawl.id
 )
 Spear_Pillar = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[89],
+    franchise_id: pokemon.id,
+    title_id: brawl.id
 )
 Spiral_Mountain = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[90],
+    franchise_id: banjo_Universe.id,
+    title_id: ultimate.id
 )
 Spirit_Train = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[91],
+    franchise_id: legend_Of_Zelda.id,
+    title_id: wiiU.id
 )
 Summit = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[92],
+    franchise_id: ice_Climbers_Universe.id,
+    title_id: brawl.id
 )
 Super_Happy_Tree = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[93],
+    franchise_id: yoshi_Universe.id,
+    title_id: smash64.id
 )
 Super_Mario_Maker = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[94],
+    franchise_id: mario_Universe.id,
+    title_id: wiiU.id
 )
 Suzaku_Castle = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[95],
+    franchise_id: street_Fighter.id,
+    title_id: wiiU.id
 )
 Temple = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[96],
+    franchise_id: legend_Of_Zelda.id,
+    title_id: melee.id
 )
 Tomodachi_Life = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[97],
+    franchise_id: tomodachi_L.id,
+    title_id: wiiU.id
 )
 Tortimer_Island = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[98],
+    franchise_id: animal_Crossing.id,
+    title_id: wiiU.id
 )
 Town_and_City = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[99],
+    franchise_id: animal_Crossing.id,
+    title_id: wiiU.id
 )
 Umbra_Clock_Tower = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[100],
+    franchise_id: bayonetta_Universe.id,
+    title_id: wiiU.id
 )
 Unova_Pokemon_League = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[101],
+    franchise_id: pokemon.id,
+    title_id: wiiU.id
 )
 Venom = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[102],
+    franchise_id: star_Fox.id,
+    title_id: melee.id
 )
 Wario_Ware_Inc = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[103],
+    franchise_id: wario_Universe.id,
+    title_id: brawl.id
 )
 Wii_Fit_Studio = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[104],
+    franchise_id: wii_Fit_Series.id,
+    title_id: wiiU.id
 )
 Wily_Castle = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[105],
+    franchise_id: megaman_Universe.id,
+    title_id: wiiU.id
 )
 Windy_Hill_Zone = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[106],
+    franchise_id: sonic_Team.id,
+    title_id: wiiU.id
 )
 Wrecking_Crew = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[107],
+    franchise_id: mario_Universe.id,
+    title_id: wiiU.id
 )
 Wuhu_Island = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[108],
+    franchise_id: wii_Fit_Series.id,
+    title_id: wiiU.id
 )
 Yggdrasils_Altar = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[109],
+    franchise_id: dragon_Quest.id,
+    title_id: ultimate.id
 )
 Yoshis_Island = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[110],
+    franchise_id: yoshi_Universe.id,
+    title_id: brawl.id
 )
 Yoshis_Island_Melee = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[111],
+    franchise_id: yoshi_Universe.id,
+    title_id: melee.id
 )
 Yoshis_Story = Stage.create!(
-    name: stage[],
-    franchise_id: ,
-    title_id:
+    name: stage[112],
+    franchise_id: yoshi_Universe.id,
+    title_id: melee.id
 )
-
+p yoshi_Universe.id
 p "Stages Done"
 p "Seeds Done"
