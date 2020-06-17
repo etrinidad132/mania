@@ -873,6 +873,5 @@ Yoshis_Story = Stage.create!(
     franchise_id: yoshi_Universe.id,
     title_id: melee.id
 )
-p yoshi_Universe.id
 p "Stages Done"
 p "Seeds Done"
