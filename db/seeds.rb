@@ -883,7 +883,7 @@ central = "Central"
 west = "West"
 south = "South"
 
-bowser_Jr. = Fighter.create!(
+bowser_Jr = Fighter.create!(
     name:"Bowser Jr.",
     franchise_id: mario_Universe.id,
     league: brawl_league,
@@ -937,5 +937,5 @@ toon_Link = Fighter.create!(
     league: brawl_league,
     division: east
 )
-
+p "Fighters Done"
 p "Seeds Done"
