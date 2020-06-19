@@ -9,6 +9,7 @@ User.destroy_all
 Franchise.destroy_all
 Title.destroy_all
 Stage.destroy_all
+Fighter.destroy_all
 
 user1 = User.create!(
     username: "bart",
@@ -874,4 +875,67 @@ Yoshis_Story = Stage.create!(
     title_id: melee.id
 )
 p "Stages Done"
+
+brawl_league = "Brawl League"
+melee_league = "Melee League"
+east = "East"
+central = "Central"
+west = "West"
+south = "South"
+
+bowser_Jr. = Fighter.create!(
+    name:"Bowser Jr.",
+    franchise_id: mario_Universe.id,
+    league: brawl_league,
+    division: east
+)
+chrom = Fighter.create!(
+    name:"Chrom",
+    franchise_id: fire_Emblem.id,
+    league: brawl_league,
+    division: east
+)
+dark_Pit = Fighter.create!(
+    name: "Dark Pit",
+    franchise_id: kid_Icarus.id,
+    league: brawl_league,
+    division: east
+)
+falco_Lombardi = Fighter.create!(
+    name: "Falco Lombardi",
+    franchise_id: star_Fox.id,
+    league: brawl_league,
+    division: east
+)
+king_K_Rool = Fighter.create!(
+    name: "King K. Rool",
+    franchise_id: donkey_Kong_Universe.id,
+    league: brawl_league,
+    division: east
+)
+lucario = Fighter.create!(
+    name: "Lucario",
+    franchise_id: pokemon.id,
+    league: brawl_league,
+    division: east
+)
+rob = Fighter.create!(
+    name:"R.O.B.",
+    franchise_id: nES_Universe.id,
+    league: brawl_league,
+    division: east
+)
+simon_Belmont = Fighter.create!(
+    name: "Simon Belmont ",
+    franchise_id: castlevania.id,
+    league: brawl_league,
+    division: east
+)
+toon_Link = Fighter.create!(
+    name: "Toon Link",
+    franchise_id: legend_Of_Zelda.id,
+    league: brawl_league,
+    division: east
+)
+
 p "Seeds Done"
