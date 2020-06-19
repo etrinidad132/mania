@@ -23,7 +23,6 @@
 #  season_sd      :integer          default(0)
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null
-#
 class Fighter < ApplicationRecord
     validates :name, :franchise_id, :league, :division, presence: true
 
