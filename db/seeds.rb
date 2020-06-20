@@ -231,7 +231,7 @@ frans = [
       platform: platform[4],
       year: 2018
   )
-p "Titles"
+p "Titles Done"
 
 # stage seed
 
@@ -996,60 +996,132 @@ star_Wolf = Fighter.create!(
 )
 
 # Brawl League West
-# duck_Hunt = Fighter.create!(
-#     name: ,
-#     franchise_id: ,
-#     league: brawl_league,
-#     division: 
-# )
-# ganondorf = Fighter.create!(
-#     name: ,
-#     franchise_id: ,
-#     league: brawl_league,
-#     division: 
-# )
-# ike = Fighter.create!(
-#     name: ,
-#     franchise_id: ,
-#     league: brawl_league,
-#     division: 
-# )
-# pac-Man = Fighter.create!(
-#     name: ,
-#     franchise_id: ,
-#     league: brawl_league,
-#     division: 
-# )
-# peach = Fighter.create!(
-#     name: ,
-#     franchise_id: ,
-#     league: brawl_league,
-#     division: 
-# )
-# pikachu = Fighter.create!(
-#     name: ,
-#     franchise_id: ,
-#     league: brawl_league,
-#     division: 
-# )
-# samus_Aran = Fighter.create!(
-#     name: ,
-#     franchise_id: ,
-#     league: brawl_league,
-#     division: 
-# )
-# shulk = Fighter.create!(
-#     name: ,
-#     franchise_id: ,
-#     league: brawl_league,
-#     division: 
-# )
-# sonic = Fighter.create!(
-#     name: ,
-#     franchise_id: ,
-#     league: brawl_league,
-#     division: 
-# )
+duck_Hunt = Fighter.create!(
+    name: "Duck Hunt",
+    franchise_id: duck_Hunt_Universe.id,
+    league: brawl_league,
+    division: west
+)
+ganondorf = Fighter.create!(
+    name: "Ganondorf",
+    franchise_id: legend_Of_Zelda.id,
+    league: brawl_league,
+    division: west
+)
+ike = Fighter.create!(
+    name: "Ike",
+    franchise_id: fire_Emblem.id,
+    league: brawl_league,
+    division: west
+)
+pac_Man = Fighter.create!(
+    name: "Pac-Man",
+    franchise_id: pac_Man_Universe.id,
+    league: brawl_league,
+    division: west
+)
+peach = Fighter.create!(
+    name: "Peach",
+    franchise_id: mario_Universe.id,
+    league: brawl_league,
+    division: west
+)
+pikachu = Fighter.create!(
+    name: "Pikachu",
+    franchise_id: pokemon.id,
+    league: brawl_league,
+    division: west
+)
+samus_Aran = Fighter.create!(
+    name: "Samus Aran",
+    franchise_id: metroid.id,
+    league: brawl_league,
+    division: west
+)
+shulk = Fighter.create!(
+    name: "Shulk",
+    franchise_id: xenoblade.id,
+    league: brawl_league,
+    division: west
+)
+sonic = Fighter.create!(
+    name: "Sonic",
+    franchise_id: sonic_Team.id,
+    league: brawl_league,
+    division: west
+)
+
+"Cloud"  
+"Corrin"  
+"Daisy"  
+"Hero"  
+"Incineroar"  
+"Kirby"  
+"Palutena"  
+"Ridley"  
+"Ryu"  
+"Villager"  
+
+cloud = Fighter.create!(
+    name: ,
+    franchise_id: ,
+    league: brawl_league,
+    division: south 
+)
+corrin = Fighter.create!(
+    name: ,
+    franchise_id: ,
+    league: brawl_league,
+    division: south 
+)
+daisy = Fighter.create!(
+    name: ,
+    franchise_id: ,
+    league: brawl_league,
+    division: south 
+)
+hero = Fighter.create!(
+    name: ,
+    franchise_id: ,
+    league: brawl_league,
+    division: south 
+)
+incineroar = Fighter.create!(
+    name: ,
+    franchise_id: ,
+    league: brawl_league,
+    division: south 
+)
+kirby = Fighter.create!(
+    name: ,
+    franchise_id: ,
+    league: brawl_league,
+    division: south 
+)
+palutena = Fighter.create!(
+    name: ,
+    franchise_id: ,
+    league: brawl_league,
+    division: south 
+)
+ridley = Fighter.create!(
+    name: ,
+    franchise_id: ,
+    league: brawl_league,
+    division: south 
+)
+ryu = Fighter.create!(
+    name: ,
+    franchise_id: ,
+    league: brawl_league,
+    division: south 
+)
+villager = Fighter.create!(
+    name: ,
+    franchise_id: ,
+    league: brawl_league,
+    division: south 
+)
 
 
 p "Fighters Done"
