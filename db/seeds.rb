@@ -883,6 +883,7 @@ central = "Central"
 west = "West"
 south = "South"
 
+# Brawl League East
 bowser_Jr = Fighter.create!(
     name:"Bowser Jr.",
     franchise_id: mario_Universe.id,
@@ -937,5 +938,119 @@ toon_Link = Fighter.create!(
     league: brawl_league,
     division: east
 )
+
+# Brawl League Central
+diddy_Kong = Fighter.create!(
+    name: "Diddy Kong",
+    franchise_id: donkey_Kong_Universe.id,
+    league: brawl_league,
+    division: central
+)
+greninja = Fighter.create!(
+    name: "Greninja",
+    franchise_id: pokemon.id,
+    league: brawl_league,
+    division: central
+)
+joker = Fighter.create!(
+    name: "Joker",
+    franchise_id: persona.id,
+    league: brawl_league,
+    division: central
+)
+link = Fighter.create!(
+    name: "Link",
+    franchise_id: legend_Of_Zelda.id,
+    league: brawl_league,
+    division: central
+)
+little_Mac = Fighter.create!(
+    name: "Little Mac",
+    franchise_id: punch_Out.id,
+    league: brawl_league,
+    division: central
+)
+mario = Fighter.create!(
+    name: "Mario",
+    franchise_id: mario_Universe.id,
+    league: brawl_league,
+    division: central
+)
+marth = Fighter.create!(
+    name: "Marth",
+    franchise_id: fire_Emblem.id,
+    league: brawl_league,
+    division: central
+)
+ness = Fighter.create!(
+    name: "Ness",
+    franchise_id: mother.id,
+    league: brawl_league,
+    division: central
+)
+star_Wolf = Fighter.create!(
+    name: "Star Wolf",
+    franchise_id: star_Fox.id,
+    league: brawl_league,
+    division: central
+)
+
+# Brawl League West
+# duck_Hunt = Fighter.create!(
+#     name: ,
+#     franchise_id: ,
+#     league: brawl_league,
+#     division: 
+# )
+# ganondorf = Fighter.create!(
+#     name: ,
+#     franchise_id: ,
+#     league: brawl_league,
+#     division: 
+# )
+# ike = Fighter.create!(
+#     name: ,
+#     franchise_id: ,
+#     league: brawl_league,
+#     division: 
+# )
+# pac-Man = Fighter.create!(
+#     name: ,
+#     franchise_id: ,
+#     league: brawl_league,
+#     division: 
+# )
+# peach = Fighter.create!(
+#     name: ,
+#     franchise_id: ,
+#     league: brawl_league,
+#     division: 
+# )
+# pikachu = Fighter.create!(
+#     name: ,
+#     franchise_id: ,
+#     league: brawl_league,
+#     division: 
+# )
+# samus_Aran = Fighter.create!(
+#     name: ,
+#     franchise_id: ,
+#     league: brawl_league,
+#     division: 
+# )
+# shulk = Fighter.create!(
+#     name: ,
+#     franchise_id: ,
+#     league: brawl_league,
+#     division: 
+# )
+# sonic = Fighter.create!(
+#     name: ,
+#     franchise_id: ,
+#     league: brawl_league,
+#     division: 
+# )
+
+
 p "Fighters Done"
 p "Seeds Done"
