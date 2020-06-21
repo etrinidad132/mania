@@ -10,7 +10,6 @@ import * as UserUtil from "./util/user_api_util";
 ///////////////////////////////////////////////////////////////////
 
 document.addEventListener("DOMContentLoaded", () => {
-  // const store = configureStore();
   let store;
   if (window.currentUser) {
     const preloadedState = {
