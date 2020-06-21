@@ -5,8 +5,7 @@ import {
 } from "../actions/fighter_actions";
 import { CLEAR_ERRORS } from "../actions/error_actions";
 
-const stage
-stage = (state = [], action) => {
+const fighterErrorsReducer = (state = [], action) => {
   Object.freeze(state);
   // debugger
   switch (action.type) {
