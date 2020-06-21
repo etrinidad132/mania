@@ -11,5 +11,5 @@ class Franchise < ApplicationRecord
      validates :name, presence: true
 
      has_many :stages
-     # has_many :fighters
+     has_many :fighters
 end

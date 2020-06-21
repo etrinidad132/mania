@@ -1302,6 +1302,7 @@ solid_Snake = Fighter.create!(
     division: west
 )
 
+# Melee League South
 captain_Falcon = Fighter.create!(
     name: "Captain Falcon",
     franchise_id: f_Zero.id,
