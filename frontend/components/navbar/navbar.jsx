@@ -113,9 +113,9 @@ class NavBar extends React.Component {
 
     const navbar = (
       <div className="navbar-main">
-        <Link className="logo" to="/dashboard">
+        {/* <Link className="logo" to="/dashboard"> */}
           MANIA
-        </Link>
+        {/* </Link> */}
         <section className="navbar-side">
           <section>{navLeft}</section>
           <section>{navRight}</section>

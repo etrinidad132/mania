@@ -184,11 +184,11 @@ frans = [
   pilotw = Franchise.create!(
       name: "Pilotwings"
   )
-  smash = Franchise.create!(
-      name: "Smash"
-  )
   arms = Franchise.create!(
       name: "Arms"
+  )
+  smash = Franchise.create!(
+      name: "Smash"
   )
 
   p "Franchise Done"
