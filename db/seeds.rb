@@ -877,6 +877,11 @@ Yoshis_Story = Stage.create!(
     franchise_id: yoshi_Universe.id,
     title_id: melee.id
 )
+Spring_Stadium = Stage.create!(
+    name: "Spring Stadium",
+    franchise_id: arms.id,
+    title_id: ultimate.id
+)
 p "Stages Done"
 
 brawl_league = "Brawl League"
