@@ -5,19 +5,21 @@ import GreetingContainer from "./greeting/greeting_container";
 import LoginFormContainer from "./session/login_form_container";
 import SignupFormContainer from "./session/signup_form_container";
 import NavBarContainer from "./navbar/navbar_container";
+import Splash from "./splash/splash";
 
 
 
 const App = () => {
   return (
     <>
-      <h1>Hello from Mania!</h1>
+      {/* <h1>Hello from Mania!</h1> */}
       <NavBarContainer />
       <GreetingContainer />
       {/* <NavBarContainer /> */}
       <Switch>
-        {/* <AuthRoute exact path="/" component={Splash} /> */}
+        <AuthRoute exact path="/" component={Splash} />
         {/* <ProtectedRoute path="/dashboard" component={DashboardContainer} /> */}
+        <ProtectedRoute path="/dashboard" component={null} />
         {/* <ProtectedRoute
           path="/routes/edit/:routeId"
           component={RouteEditContainer}

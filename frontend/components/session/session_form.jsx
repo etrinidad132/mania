@@ -11,7 +11,7 @@ class SessionForm extends React.Component {
 
     this.update = this.update.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.googleLogin = this.googleLogin.bind(this);
+    this.googleLogin = this.googleLogin.bind(this);
   }
 
   componentWillUnmount() {
@@ -40,10 +40,10 @@ class SessionForm extends React.Component {
     // }, 1000);
   }
 
-//   googleLogin() {
-//     // debugger
-//     this.props.loginDemo();
-//   }
+  googleLogin() {
+    // debugger
+    this.props.loginDemo();
+  }
 
   render() {
     // debugger
@@ -74,9 +74,9 @@ class SessionForm extends React.Component {
         <div className="form-container">
           <h3 className="form-type">{formText}</h3>
           <form>
-            {/* <a className="google" onClick={this.googleLogin}>
+            <a className="google" onClick={this.googleLogin}>
               {formText} using Demo
-            </a> */}
+            </a>
             {/* <h3>Or {formText} With a Email</h3> */}
             {/* <label>Username */}
             <input
@@ -100,7 +100,7 @@ class SessionForm extends React.Component {
             <button onClick={this.handleSubmit}>{formText}</button>
           </form>
 
-          <Link to={optionalLink}>{optionalText}</Link>
+          {/* <Link to={optionalLink}>{optionalText}</Link> */}
         </div>
       </>
     );
