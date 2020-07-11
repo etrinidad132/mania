@@ -27,5 +27,5 @@ class Fighter < ApplicationRecord
     validates :name, :franchise_id, :league, :division, presence: true
 
     belongs_to :franchise
-    # 
+    
 end
