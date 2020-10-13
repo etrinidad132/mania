@@ -190,6 +190,9 @@ frans = [
   smash = Franchise.create!(
       name: "Smash"
   )
+  minecraft = Franchise.create!(
+      name: "Minecraft"
+  )
 
   p "Franchise Done"
 
@@ -882,6 +885,13 @@ Spring_Stadium = Stage.create!(
     franchise_id: arms.id,
     title_id: ultimate.id
 )
+
+Minecraft_World = Stage.create!(
+    name: "Minecraft World",
+    franchise_id: minecraft.id,
+    title_id: ultimate.id
+)
+
 p "Stages Done"
 
 brawl_league = "Brawl League"
