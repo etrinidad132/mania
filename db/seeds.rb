@@ -57,7 +57,7 @@ frans = [
   "Yoshi Universe",
 ]
 
-# must finish adding everyone
+### must finish adding everyone
   animal_Crossing = Franchise.create!(
       name: frans[0]
   )
