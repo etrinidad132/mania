@@ -16,6 +16,11 @@ user1 = User.create!(
     email: "bart@bart.com", 
     password: "password" )
 
+user = User.create!(
+    username: "bart2",
+    email: "bart2@bart.com", 
+    password: "password" )
+
 
 p "Users Done"
 # length 35
