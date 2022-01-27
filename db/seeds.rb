@@ -17,6 +17,7 @@ user1 = User.create!(
 
 
 p "Users Done"
+p "Users Done Done"
 # length 35
 frans = [
   "Animal Crossing",
