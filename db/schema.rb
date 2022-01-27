@@ -10,10 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_11_044036) do
+ActiveRecord::Schema.define(version: 2020_06_19_005919) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "fighters", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "franchise_id", null: false
+    t.string "league", null: false
+    t.string "division", null: false
+    t.integer "all_appears", default: 0
+    t.integer "all_wins", default: 0
+    t.integer "all_points", default: 0
+    t.integer "all_fs", default: 0
+    t.integer "all_ko", default: 0
+    t.integer "all_falls", default: 0
+    t.integer "all_sd", default: 0
+    t.integer "season_appears", default: 0
+    t.integer "season_wins", default: 0
+    t.integer "season_points", default: 0
+    t.integer "season_fs", default: 0
+    t.integer "season_ko", default: 0
+    t.integer "season_falls", default: 0
+    t.integer "season_sd", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["franchise_id"], name: "index_fighters_on_franchise_id"
+  end
 
   create_table "franchises", force: :cascade do |t|
     t.string "name", null: false

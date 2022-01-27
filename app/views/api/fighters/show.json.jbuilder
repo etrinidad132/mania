@@ -1,0 +1,1 @@
+json.partial! "api/fighters/fighter", fighter: @fighter

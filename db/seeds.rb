@@ -9,6 +9,7 @@ User.destroy_all
 Franchise.destroy_all
 Title.destroy_all
 Stage.destroy_all
+Fighter.destroy_all
 
 user1 = User.create!(
     username: "bart",
@@ -187,6 +188,9 @@ frans = [
   smash = Franchise.create!(
       name: "Smash"
   )
+  arms = Franchise.create!(
+      name: "Arms"
+  )
 
   p "Franchise Done"
 
@@ -231,7 +235,7 @@ frans = [
       platform: platform[4],
       year: 2018
   )
-p "Titles"
+p "Titles Done"
 
 # stage seed
 
@@ -875,4 +879,492 @@ Yoshis_Story = Stage.create!(
     title_id: melee.id
 )
 p "Stages Done"
+
+brawl_league = "Brawl League"
+melee_league = "Melee League"
+east = "East"
+central = "Central"
+west = "West"
+south = "South"
+
+# Brawl League East
+bowser_Jr = Fighter.create!(
+    name:"Bowser Jr.",
+    franchise_id: mario_Universe.id,
+    league: brawl_league,
+    division: east
+)
+chrom = Fighter.create!(
+    name:"Chrom",
+    franchise_id: fire_Emblem.id,
+    league: brawl_league,
+    division: east
+)
+dark_Pit = Fighter.create!(
+    name: "Dark Pit",
+    franchise_id: kid_Icarus.id,
+    league: brawl_league,
+    division: east
+)
+falco_Lombardi = Fighter.create!(
+    name: "Falco Lombardi",
+    franchise_id: star_Fox.id,
+    league: brawl_league,
+    division: east
+)
+king_K_Rool = Fighter.create!(
+    name: "King K. Rool",
+    franchise_id: donkey_Kong_Universe.id,
+    league: brawl_league,
+    division: east
+)
+lucario = Fighter.create!(
+    name: "Lucario",
+    franchise_id: pokemon.id,
+    league: brawl_league,
+    division: east
+)
+rob = Fighter.create!(
+    name:"R.O.B.",
+    franchise_id: nES_Universe.id,
+    league: brawl_league,
+    division: east
+)
+simon_Belmont = Fighter.create!(
+    name: "Simon Belmont ",
+    franchise_id: castlevania.id,
+    league: brawl_league,
+    division: east
+)
+toon_Link = Fighter.create!(
+    name: "Toon Link",
+    franchise_id: legend_Of_Zelda.id,
+    league: brawl_league,
+    division: east
+)
+
+# Brawl League Central
+diddy_Kong = Fighter.create!(
+    name: "Diddy Kong",
+    franchise_id: donkey_Kong_Universe.id,
+    league: brawl_league,
+    division: central
+)
+greninja = Fighter.create!(
+    name: "Greninja",
+    franchise_id: pokemon.id,
+    league: brawl_league,
+    division: central
+)
+joker = Fighter.create!(
+    name: "Joker",
+    franchise_id: persona.id,
+    league: brawl_league,
+    division: central
+)
+link = Fighter.create!(
+    name: "Link",
+    franchise_id: legend_Of_Zelda.id,
+    league: brawl_league,
+    division: central
+)
+little_Mac = Fighter.create!(
+    name: "Little Mac",
+    franchise_id: punch_Out.id,
+    league: brawl_league,
+    division: central
+)
+mario = Fighter.create!(
+    name: "Mario",
+    franchise_id: mario_Universe.id,
+    league: brawl_league,
+    division: central
+)
+marth = Fighter.create!(
+    name: "Marth",
+    franchise_id: fire_Emblem.id,
+    league: brawl_league,
+    division: central
+)
+ness = Fighter.create!(
+    name: "Ness",
+    franchise_id: mother.id,
+    league: brawl_league,
+    division: central
+)
+star_Wolf = Fighter.create!(
+    name: "Star Wolf",
+    franchise_id: star_Fox.id,
+    league: brawl_league,
+    division: central
+)
+
+# Brawl League West
+duck_Hunt = Fighter.create!(
+    name: "Duck Hunt",
+    franchise_id: duck_Hunt_Universe.id,
+    league: brawl_league,
+    division: west
+)
+ganondorf = Fighter.create!(
+    name: "Ganondorf",
+    franchise_id: legend_Of_Zelda.id,
+    league: brawl_league,
+    division: west
+)
+ike = Fighter.create!(
+    name: "Ike",
+    franchise_id: fire_Emblem.id,
+    league: brawl_league,
+    division: west
+)
+pac_Man = Fighter.create!(
+    name: "Pac-Man",
+    franchise_id: pac_Man_Universe.id,
+    league: brawl_league,
+    division: west
+)
+peach = Fighter.create!(
+    name: "Peach",
+    franchise_id: mario_Universe.id,
+    league: brawl_league,
+    division: west
+)
+pikachu = Fighter.create!(
+    name: "Pikachu",
+    franchise_id: pokemon.id,
+    league: brawl_league,
+    division: west
+)
+samus_Aran = Fighter.create!(
+    name: "Samus Aran",
+    franchise_id: metroid.id,
+    league: brawl_league,
+    division: west
+)
+shulk = Fighter.create!(
+    name: "Shulk",
+    franchise_id: xenoblade.id,
+    league: brawl_league,
+    division: west
+)
+sonic = Fighter.create!(
+    name: "Sonic",
+    franchise_id: sonic_Team.id,
+    league: brawl_league,
+    division: west
+)
+
+# Brawl League South
+cloud = Fighter.create!(
+    name: "Cloud",
+    franchise_id: final_Fantasy.id,
+    league: brawl_league,
+    division: south 
+)
+corrin = Fighter.create!(
+    name: "Corrin",
+    franchise_id: fire_Emblem.id,
+    league: brawl_league,
+    division: south 
+)
+daisy = Fighter.create!(
+    name: "Daisy",
+    franchise_id: mario_Universe.id,
+    league: brawl_league,
+    division: south 
+)
+hero = Fighter.create!(
+    name: "Hero",
+    franchise_id: dragon_Quest.id,
+    league: brawl_league,
+    division: south 
+)
+incineroar = Fighter.create!(
+    name: "Incineroar",
+    franchise_id: pokemon.id,
+    league: brawl_league,
+    division: south 
+)
+kirby = Fighter.create!(
+    name: "Kirby",
+    franchise_id: kirby_Universe.id,
+    league: brawl_league,
+    division: south 
+)
+palutena = Fighter.create!(
+    name: "Palutena",
+    franchise_id: kid_Icarus.id,
+    league: brawl_league,
+    division: south 
+)
+ridley = Fighter.create!(
+    name: "Ridley",
+    franchise_id: metroid.id,
+    league: brawl_league,
+    division: south 
+)
+ryu = Fighter.create!(
+    name: "Ryu",
+    franchise_id: street_Fighter.id,
+    league: brawl_league,
+    division: south 
+)
+villager = Fighter.create!(
+    name: "Villager",
+    franchise_id: animal_Crossing.id,
+    league: brawl_league,
+    division: south 
+)
+
+# Melee League East
+byleth = Fighter.create!(
+    name: "Byleth",
+    franchise_id: fire_Emblem.id,
+    league: melee_league,
+    division: east
+)
+donkey_Kong = Fighter.create!(
+    name: "Donkey Kong",
+    franchise_id: donkey_Kong_Universe.id,
+    league: melee_league,
+    division: east
+)
+inkling = Fighter.create!(
+    name: "Inkling",
+    franchise_id: splatoon.id,
+    league: melee_league,
+    division: east
+)
+ken = Fighter.create!(
+    name: "Ken",
+    franchise_id: street_Fighter.id,
+    league: melee_league,
+    division: east
+)
+king_Dedede = Fighter.create!(
+    name: "King Dedede",
+    franchise_id: kirby_Universe.id,
+    league: melee_league,
+    division: east
+)
+lucas = Fighter.create!(
+    name: "Lucas",
+    franchise_id: mother.id,
+    league: melee_league,
+    division: east
+)
+luigi = Fighter.create!(
+    name: "Luigi",
+    franchise_id: mario_Universe.id,
+    league: melee_league,
+    division: east
+)
+mega_Man = Fighter.create!(
+    name: "Mega Man",
+    franchise_id: megaman_Universe.id,
+    league: melee_league,
+    division: east
+)
+pokemon_Trainer = Fighter.create!(
+    name: "Pokemon Trainer",
+    franchise_id: pokemon.id,
+    league: melee_league,
+    division: east
+)
+zelda = Fighter.create!(
+    name: "Zelda",
+    franchise_id: legend_Of_Zelda.id,
+    league: melee_league,
+    division: east
+)
+
+# Melee League Central
+banjo_Kazooie = Fighter.create!(
+    name: "Banjo & Kazooie",
+    franchise_id: banjo_Universe.id,
+    league: melee_league,
+    division: central
+)
+ice_Climbers = Fighter.create!(
+    name: "Ice Climbers",
+    franchise_id: ice_Climbers_Universe.id,
+    league: melee_league,
+    division: central
+)
+isabelle = Fighter.create!(
+    name: "Isabelle",
+    franchise_id: animal_Crossing.id,
+    league: melee_league,
+    division: central
+)
+olimar = Fighter.create!(
+    name: "Olimar",
+    franchise_id: pikmin.id,
+    league: melee_league,
+    division: central
+)
+pichu = Fighter.create!(
+    name: "Pichu",
+    franchise_id: pokemon.id,
+    league: melee_league,
+    division: central
+)
+robin = Fighter.create!(
+    name: "Robin",
+    franchise_id: fire_Emblem.id,
+    league: melee_league,
+    division: central
+)
+rosalina_Luma = Fighter.create!(
+    name: "Rosalina & Luma",
+    franchise_id: mario_Universe.id,
+    league: melee_league,
+    division: central
+)
+wario = Fighter.create!(
+    name: "Wario",
+    franchise_id: wario_Universe.id,
+    league: melee_league,
+    division: central
+)
+yoshi = Fighter.create!(
+    name: "Yoshi",
+    franchise_id: mario_Universe.id,
+    league: melee_league,
+    division: central
+)
+young_Link = Fighter.create!(
+    name: "Young Link",
+    franchise_id: legend_Of_Zelda.id,
+    league: melee_league,
+    division: central
+)
+
+# Melee League West
+bayonetta = Fighter.create!(
+    name: "Bayonetta",
+    franchise_id: bayonetta_Universe.id,
+    league: melee_league,
+    division: west
+)
+bowser = Fighter.create!(
+    name: "Bowser",
+    franchise_id: mario_Universe.id,
+    league: melee_league,
+    division: west
+)
+dark_Samus = Fighter.create!(
+    name: "Dark Samus",
+    franchise_id: metroid.id,
+    league: melee_league,
+    division: west
+)
+jigglypuff = Fighter.create!(
+    name: "Jigglypuff",
+    franchise_id: pokemon.id,
+    league: melee_league,
+    division: west
+)
+lucina = Fighter.create!(
+    name: "Lucina",
+    franchise_id: fire_Emblem.id,
+    league: melee_league,
+    division: west
+)
+mr_Game_Watch = Fighter.create!(
+    name: "Mr. Game & Watch",
+    franchise_id: game_Watch_Series.id,
+    league: melee_league,
+    division: west
+)
+piranha_Plant = Fighter.create!(
+    name: "Piranha Plant",
+    franchise_id: mario_Universe.id,
+    league: melee_league,
+    division: west
+)
+richter_Belmont = Fighter.create!(
+    name: "Richter Belmont",
+    franchise_id: castlevania.id,
+    league: melee_league,
+    division: west
+)
+sheik = Fighter.create!(
+    name: "Sheik",
+    franchise_id: legend_Of_Zelda.id,
+    league: melee_league,
+    division: west
+)
+solid_Snake = Fighter.create!(
+    name: "Solid Snake",
+    franchise_id: metal_Gear_Solid.id,
+    league: melee_league,
+    division: west
+)
+
+# Melee League South
+captain_Falcon = Fighter.create!(
+    name: "Captain Falcon",
+    franchise_id: f_Zero.id,
+    league: melee_league,
+    division: south
+)
+dr_Mario = Fighter.create!(
+    name: "Dr. Mario",
+    franchise_id: mario_Universe.id,
+    league: melee_league,
+    division: south
+)
+fox_McCloud = Fighter.create!(
+    name: "Fox McCloud",
+    franchise_id: star_Fox.id,
+    league: melee_league,
+    division: south
+)
+meta_Knight = Fighter.create!(
+    name: "Meta Knight",
+    franchise_id: kirby_Universe.id,
+    league: melee_league,
+    division: south
+)
+mewtwo = Fighter.create!(
+    name: "Mewtwo",
+    franchise_id: pokemon.id,
+    league: melee_league,
+    division: south
+)
+pit = Fighter.create!(
+    name: "Pit",
+    franchise_id: kid_Icarus.id,
+    league: melee_league,
+    division: south
+)
+roy = Fighter.create!(
+    name: "Roy",
+    franchise_id: fire_Emblem.id,
+    league: melee_league,
+    division: south
+)
+terry = Fighter.create!(
+    name: "Terry",
+    franchise_id: fatal_Fury.id,
+    league: melee_league,
+    division: south
+)
+wii_Fit_Trainer = Fighter.create!(
+    name: "Wii Fit Trainer",
+    franchise_id: wii_Fit_Series.id,
+    league: melee_league,
+    division: south
+)
+zero_Suit_Samus = Fighter.create!(
+    name: "Zero Suit Samus",
+    franchise_id: metroid.id,
+    league: melee_league,
+    division: south
+)
+
+
+p "Fighters Done"
 p "Seeds Done"

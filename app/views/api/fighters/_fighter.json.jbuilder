@@ -1,0 +1,1 @@
+json.extract! fighter, :id, :name, :franchise_id, :name, :franchise_id, :league, :division, :all_appears, :all_wins, :all_points, :all_fs, :all_ko, :all_falls, :all_sd, :season_appears, :season_wins, :season_points, :season_fs, :season_ko, :season_falls, :season_sd
